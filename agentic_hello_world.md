@@ -1,5 +1,30 @@
 # Building Intelligent Agents with LangChain: A Practical Guide
 
+## How Agentic AI Works
+Before diving into the code, let's visualize how an agentic AI system operates:
+
+```mermaid
+graph TD
+    A[User Input] -->|Triggers| B[Decision Making<br/>[LLM]]
+    B -->|Choose Tool| C[Tool Usage]
+    B -->|Direct Response| E[End]
+    C -->|Update State| D[Next Step Decision<br/>[LLM]]
+    D -->|Continue| B
+    D -->|Complete| E
+    
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#96f,stroke:#333,stroke-width:2px
+    style D fill:#f96,stroke:#333,stroke-width:2px
+```
+
+This workflow illustrates the three key capabilities that make an AI system "agentic":
+
+1. **Autonomous Decision Making** (shown in pink): The LLM evaluates input and decides what to do next
+2. **Tool Usage** (shown in purple): The system can use external tools to accomplish tasks
+3. **Multi-Step Task Execution** (shown in orange): The system can chain multiple actions together
+
+[Rest of the article content follows...]
+
 ## What Makes AI "Agentic"?
 An AI system becomes "agentic" when it possesses these three key capabilities:
 
