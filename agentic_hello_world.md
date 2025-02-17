@@ -5,7 +5,7 @@ Before diving into the code, let's visualize how an agentic AI system operates:
 
 ```mermaid
 graph TD
-    A[User Input] -->|Triggers| B[Decision Making (LLM)]
+    A[User Input] -->|Triggers| B[Decision Making - LLM]
     B -->|Choose Tool| C[Tool Usage]
     B -->|Direct Response| E[End]
     C -->|Update State| D[Next Step Decision (LLM)]
