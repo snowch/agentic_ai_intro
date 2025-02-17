@@ -142,16 +142,12 @@ Here's how these components work together to create agentic behavior:
 
 ```mermaid
 graph TD
-    A[User Input] -->|Triggers| B[Decision Making]
-    B -->|Choose Tool| C[Tool Usage]
-    B -->|Direct Response| E[End]
-    C -->|Update State| D[Next Step Decision]
-    D -->|Continue| B
-    D -->|Complete| E
-    
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style C fill:#96f,stroke:#333,stroke-width:2px
-    style D fill:#f96,stroke:#333,stroke-width:2px
+A[User Input] -->|Triggers| B[Decision Making<br/>[LLM]]
+B -->|Choose Tool| C[Tool Usage]
+B -->|Direct Response| E[End]
+C -->|Update State| D[Next Step Decision<br/>[LLM]]
+D -->|Continue| B
+D -->|Complete| E
 ```
 
 ## Building More Complex Agents
