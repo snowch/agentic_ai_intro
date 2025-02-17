@@ -1,5 +1,14 @@
 # Building Intelligent Agents with LangChain: A Practical Guide
 
+## What Makes AI "Agentic"?
+An AI system becomes "agentic" when it possesses these three key capabilities:
+
+1. **Autonomous Decision Making**: The ability to decide what actions to take based on input and context
+2. **Tool Usage**: The capacity to use external tools or functions to accomplish tasks
+3. **Multi-Step Task Execution**: The ability to chain multiple actions together in a meaningful sequence
+
+These three capabilities transform a passive language model into an active agent that can operate with meaningful autonomy. Let's see how each piece of our implementation contributes to these core capabilities.
+
 ## How Agentic AI Works
 Before diving into the code, let's visualize how an agentic AI system operates:
 
@@ -22,17 +31,6 @@ This workflow illustrates the three key capabilities that make an AI system "age
 1. **Autonomous Decision Making** (shown in pink): The LLM evaluates input and decides what to do next
 2. **Tool Usage** (shown in purple): The system can use external tools to accomplish tasks
 3. **Multi-Step Task Execution** (shown in orange): The system can chain multiple actions together
-
-[Rest of the article content follows...]
-
-## What Makes AI "Agentic"?
-An AI system becomes "agentic" when it possesses these three key capabilities:
-
-1. **Autonomous Decision Making**: The ability to decide what actions to take based on input and context
-2. **Tool Usage**: The capacity to use external tools or functions to accomplish tasks
-3. **Multi-Step Task Execution**: The ability to chain multiple actions together in a meaningful sequence
-
-These three capabilities transform a passive language model into an active agent that can operate with meaningful autonomy. Let's see how each piece of our implementation contributes to these core capabilities.
 
 ## Implementation Guide
 
